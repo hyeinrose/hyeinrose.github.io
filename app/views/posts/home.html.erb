@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/assets/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+     <header id="top" class="header">
+        
+         <div class="text-vertical-center" style="color:white">
+            <h1 > Welcome to Hye In's blog ♡</h1>
+            <h3> # Korean # IT # Travel # Likelion ! </h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">made by HyeIn </a>
+        </div>
+    </header>   
+    <ul class="nav nav-pills categories">
+        <li class="active"><a href="#"> Introduction </a></li>
+        <li><a href="/posts/index"> Post </a></li>
+        <li>
+           
+                <a href="/trips/index">  Travel </a>
+            
+        </li>
+       
+        
+        <li><a href="#">Techniques </a></li>
+    </ul>
+    
+</head>
+
+<body>
+ 
+    <div class="container post">
+        <div class="row">
+            <div class="col-md-6 post-title">
+                <h1>Welcome to Hyein's <br>world</h1>
+                <p class="author"><strong>hyein</strong> <span class="text-muted">May 25th 2017 </span></p>
+            </div>
+            <div class="col-md-6 col-md-offset-0 post-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem quam, scelerisque vitae sem non, ornare condimentum leo. Vivamus eros tortor, tincidunt et viverra ac, gravida eu augue. Interdum et malesuada fames ac ante ipsum primis
+                    in faucibus. Praesent nibh ex, hendrerit at tellus sed, laoreet suscipit leo. </p>
+                <p>Curabitur cursus ac quam sit amet mattis. Donec lacinia massa id libero tincidunt, sed ultricies magna eleifend. Integer porta consectetur ipsum sed porttitor. Praesent sed convallis nisi. Mauris eget commodo sem. Sed auctor commodo quam
+                    eu semper. </p>
+                <p>Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor, et vestibulum ante quam non justo. Nullam luctus rutrum mattis. Maecenas in pharetra mi, vel mollis odio. </p>
+                <figure><img src="/assets/bali.jpg" height="400" width="580">
+                
+                    <figcaption> In Bali </figcaption>
+                </figure>
+                <p> I love traveling ! I went to plenty of countries in 2016. I got millions picture ^-^. If you feel like discovering my trip click on menu above.  </p>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Call to Action -->
+    <aside class="call-to-action" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>You wanna come to my face book ! ? </h3>
+                    
+                     <a href="https://www.facebook.com/profile.php?id=100003225818091"><img src="/assets/facebook.png" height="10px" width="10px" ></a>
+                      <h1>click ! </h1>
+                       </div>
+            </div>
+        </div>
+    </aside>
+    
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>address where I am</strong>
+                    </h4>
+                    <p>Korea 
+                        <br>You are welcome to Kroea ! </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 010-5124-5312</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">gn00090@naver.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/assets/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    
+</body>
+
+</html>

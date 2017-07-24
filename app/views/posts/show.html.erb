@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/assets/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+     <header id="top" class="header">
+        
+         <div class="text-vertical-center" style="color:white">
+            <h1 > Welcome to Hye In's blog ♡</h1>
+            <h3> # Korean # IT # Travel # Likelion ! </h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">made by HyeIn </a>
+        </div>
+    </header>   
+    <ul class="nav nav-pills categories">
+        <li class="active"><a href="#"> Introduction </a></li>
+        <li><a href="/posts/index"> Post </a></li>
+        <li>
+           
+                <a href="/trips/index">  Travel </a>
+            
+        </li>
+       
+        
+        <li><a href="#">Techniques </a></li>
+    </ul>
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
+    
+                    <!-- Title -->
+               
+                <!-- Date/Time -->
+                
+                
+               
+                <h2 class="mt-4"> <%= @post.title%></h2> <!--title-->
+                
+                
+                <p class="lead"> <%= @post.content%></p> <!--contents-->
+                <hr>
+                <p>Posted on <%= @post.created_at%></p>
+                <p>Updated on <%= @post.updated_at%></p>
+                <hr>
+                
+                
+                
+                <div class="media mb-4">
+                    <div class="media-body">
+ 
+                        <button type="submit" ><a href="/posts/index" > Go back list </a></button>
+                        <button type="submit" ><a href="/posts/destory/<%= @post.id%>" data-confirm="진짜로 삭제 ? "> Delete </a></button>
+                        <button type="submit" ><a href="/posts/edit/<%= @post.id%>" > Edit </a></button>
+                        
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+

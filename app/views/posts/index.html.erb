@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+     <!-- Bootstrap Core CSS -->
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/assets/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="/assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+
+<body>
+     <header id="top" class="header2">
+        
+         <div class="text-vertical-center" style="color:white">
+            <h1> Hye In ♡</h1>
+            <h3> # Korean # IT # Travel # Likelion ! </h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">made by HyeIn </a>
+        </div>
+    </header>   
+    <ul class="nav nav-pills categories">
+        <li><a href='/'> Introduction </a></li>
+        <li  class="active"><a href="/posts/index"> Post </a></li>
+        <li><a href="/trips/index"> Travel </a></li>
+        <li><a href="#">Locations </a></li>
+        <li><a href="#">Techniques </a></li>
+    </ul>    
+    
+<div class="container">
+     <br><br>
+     <a href="/posts/new" class="btn btn-dark btn-lg">New Post </a>
+   
+    <br><br>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Number </th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% @posts.each do |post| %>
+                <tr>
+                    <td><%= post.id %></td>
+                    <td><a href="/posts/show/<%= post.id %>">  <%= post.title %></a></td>
+                </tr>
+            <% end %>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </div>
+    
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>address where I am</strong>
+                    </h4>
+                    <p>north of Daegu
+                        <br>Daegu , KOREA </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 010-5124-5312</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">gn00090@naver.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+</body>
